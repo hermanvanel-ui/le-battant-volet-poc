@@ -323,8 +323,8 @@ scene.add(floor);
 // Chacun : cadre + 14 lamelles horizontales + 3 paumelles
 // =========================================================
 
-// Matériau alu thermolaqué — vraies textures PBR Polyhaven (metal_plate_02)
-const aluPBR = loadPBRSet('metal_plate_02', { res:'1k', repeat:[1, 3] });
+// Matériau alu thermolaqué — texture PBR Polyhaven SPÉCIFIQUE volet (painted_metal_shutter)
+const aluPBR = loadPBRSet('painted_metal_shutter', { res:'1k', repeat:[1, 2] });
 const aluMat = new THREE.MeshPhysicalMaterial({
   color: 0x8FAF89,                    // vert-volet (palette Le battant)
   map: aluPBR.diff,
